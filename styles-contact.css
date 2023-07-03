@@ -118,7 +118,7 @@ p {
 nav{
 	font-family: 'Abril Fatface', cursive;
 	font-size: 1.2em;
-	width: 400px; /* This is the width of the nav element */
+	width: 80%; /* This is the width of the nav element */
 	margin: 0 auto; /* This centers the entire nav element inside
 	the center div */
 	border: dashed turquoise;
