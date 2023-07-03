@@ -1,0 +1,215 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/rocks-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+	
+	
+}
+
+.center {
+    width: 75%;
+	padding: 2%;
+    margin: 100px auto;
+ 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+	border: 4px dashed white;
+}
+
+   
+#logo {
+    margin-bottom: 16px;
+	border: 3px dashed red;
+	text-align: center;
+	width: 80%;
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-size: 2em;
+    margin: 0px auto 10px auto;
+    color: #fff;
+	font-family: 'Abril Fatface', cursive;
+
+}
+
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-size: 1.5em;
+    line-height: 1.4;
+    color: #fff;
+    padding: 0px 0px;
+    margin: 0px auto 25px auto;
+	font-family: 'Abril Fatface', cursive;
+
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+	font-family: 'Abril Fatface', cursive;
+
+}
+
+nav{
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1.2em;
+	width: 400px; /* This is the width of the nav element */
+	margin: 0 auto; /* This centers the entire nav element inside
+	the center div */
+	border: dashed turquoise;
+	border-width: 3px 0; /* This puts a 3 pixel border on top and bottom of the
+	nav element, the zero eliminates the left and right sides of the border */
+	text-align: center;
+	margin-top: 2em; /* This adds a bit of space above the nav element */
+	}
+	nav li{
+	display: inline; /* This allows
+	the block level elements to
+	display next to one another */
+	}
+	nav a{
+	display: inline-block;
+	padding: 10px; /* This adds space
+	around each of the links */
+	}
+	a{
+	color: #444;
+	text-decoration: none; /* This
+	removes the underline */
+	font-weight: bold;
+	}
+	
+
+	/*NEW NAV CSS*/
+
+	/* Add a black background color to the top navigation */
+
+	.navlogo {
+		float: left;
+		margin: 10px 0 10px 20px;
+	}
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 45px 40px;
+	text-decoration: none;
+	font-size: 1.5em;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	color: rgb(172, 171, 171);
+  }
+  
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+	display: none;
+  }
+
+  /* NEW NAV MEDIA QUERIES */
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.icon {
+	  float: right;
+	  display: block;
+	}
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.topnav.responsive a {
+	  float: none;
+	  display: flex;
+	  flex-direction: column;
+	  padding: 20px 40px;
+	}
+	.navlogo {
+		float: none;
+		margin-left: 20px;
+	}
+  }
