@@ -201,6 +201,7 @@ nav{
 	  position: absolute;
 	  right: 0;
 	  top: 0;
+	width: 100%;
 	}
 	.topnav.responsive a {
 	  float: none;
